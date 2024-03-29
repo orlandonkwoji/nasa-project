@@ -4,10 +4,10 @@
   "description": "NASA Mission Cotrol API",
   "main": "src/server.js",
   "scripts": {
-    "test": "dotenvx run --env-file=.env.test -- jest",
-    "test-watch": "dotenvx run --env-file=.env.test -- jest --watch",
-    "watch": "dotenvx run -- nodemon src/server.js",
-    "start": "dotenvx run -- node src/server.js",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "watch": "nodemon src/server.js",
+    "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i 0"
   },
   "keywords": [],
